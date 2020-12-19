@@ -67,26 +67,33 @@ header{
 	content:"";
 }
 
+main{
+	background-image: url('../img/bg-01.jpg');
+	background-repeat: no-repeat;
+}
+
 main .container{
 	text-align: center;
-	background-image: url('../img/images/bg-01.jpg');
+	background: rgba(83, 99, 219, 0.8);
 	max-width: 100%;
-	padding: 80px 400px;
+	padding: 80px 70px 110px 400px;
 }
 
 .form_title{
 	display: flex;
+	justify-content: space-between;
 }
 
 form{
 	text-align: left;
 	background-image: none;
 	background-color: #ffffff;
-    width: 300px;
+    max-width: 300px;
 	box-shadow: 8px 8px 10px rgba(0,0,0, 0.15);
 	border-radius: 20px;
 	padding: 40px 30px 35px;
 	margin: 0;
+	opacity: 1;
 }
 
 form h2{
@@ -138,6 +145,31 @@ select{
 	background-color: #5363db;
 	color: #ffffff;
 	border: none;
-	
 }
 
+.title_text{
+	color: #ffffff;
+	text-align: left;
+	padding-left: 90px;
+}
+
+h1{
+	font-size: 48px;
+	line-height: 1.5;
+}
+
+.title_text p{
+	font-size: 40px;
+	line-height: 1.2;
+	font-family: "FREESCPT";
+}
+
+@font-face {
+    font-family: 'FREESCPT';
+    src: url('../fonts/fonts/FREESCPT.eot');
+    src: url('../fonts/fonts/FREESCPT.eot') format('embedded-opentype'),
+         url('../fonts/fonts/FREESCPT.woff2') format('woff2'),
+         url('../fonts/fonts/FREESCPT.woff') format('woff'),
+         url('../fonts/fonts/FREESCPT.ttf') format('truetype'),
+         url('../fonts/fonts/FREESCPT.svg#FREESCPT') format('svg');
+}
