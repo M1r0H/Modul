@@ -67,12 +67,14 @@ header{
 	content:"";
 }
 
-main{
+.form_wrapper{
+	background-size: cover;
+	background-position: center;
 	background-image: url('../img/bg-01.jpg');
 	background-repeat: no-repeat;
 }
 
-main .container{
+main .form_background{
 	text-align: center;
 	background: rgba(83, 99, 219, 0.8);
 	max-width: 100%;
@@ -162,6 +164,30 @@ h1{
 	font-size: 40px;
 	line-height: 1.2;
 	font-family: "FREESCPT";
+}
+
+.block_program{
+	text-align: center;
+}
+
+.program_title{
+	margin-top: 125px;
+}
+
+.program_title h2{
+	margin: 0;
+}
+
+.cards_program{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card{
+	display: flex;
+	flex-basis: calc(50% - 30px);
+	margin: 15px;
+	box-shadow: 5px 5px 20px 0 rgba( 0, 0, 0, 0.1);
 }
 
 @font-face {
