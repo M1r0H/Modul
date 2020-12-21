@@ -11,12 +11,21 @@ html{
 	color: #555555;
 }
 
+.wrapper{
+	position: relative;
+	margin: 0 auto;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	max-width: 1400px;
+}
 /*--------------- ICONS ---------------*/
 
 [class^="icon-"], [class*=" icon-"] {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: 'icomoon' !important;
-	speak: never;
+	speak-as: never;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -87,8 +96,13 @@ html{
 /*--------------- HEADER ---------------*/
 
 header{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
 	background-color: #ffffff;
 	padding: 16px 0;
+	z-index: 1000;
 }
 
 .container{
@@ -143,12 +157,8 @@ header{
 }
 
 /*--------------- FORM ---------------*/
-
-.form_wrapper{
-	background-size: cover;
-	background-position: center;
-	background-image: url('../img/bg-01.jpg');
-	background-repeat: no-repeat;
+main{
+	margin-top: 100px;
 }
 
 main .form_background{
@@ -184,7 +194,7 @@ form h2{
 
 .user{
 	width: 100%;
-	margin: 17px 0 0 0;
+	margin-top: 17px;
 	border: none;
 	background-color: #f2f2f2;
 	border-radius: 10px;
@@ -217,6 +227,7 @@ select{
 	margin-top: 30px;
 }
 
+
 .form_button{
 	min-width: 170px;
 	border-radius: 10px;
@@ -224,6 +235,14 @@ select{
 	background-color: #5363db;
 	color: #ffffff;
 	border: none;
+	transition: box-shadow ease 0.3s, transform ease 0.5s;
+}
+
+.form_button:hover{
+	cursor: pointer;
+	box-shadow: 0 0 40px rgba(83, 99, 219);
+	transform: scale(1.02);
+	transition: box-shadow ease 0.3s, transform ease 0.5s;
 }
 
 .title_text{
@@ -247,11 +266,12 @@ h1{
 
 .block_program{
 	text-align: center;
-	margin: 125px 0 215px 0;
+	max-width: 1200px;
+	margin: 125px auto 215px;
 }
 
 .program_title{
-	margin: 0 auto 75px auto;
+	margin: 0 auto 75px;
 }
 
 .program_title h2{
@@ -279,7 +299,7 @@ h1{
 	display: flex;
 	flex-basis: 570px;
 	border-radius: 10px;
-	margin: 0 15px 30px 15px;
+	margin: 0 15px 30px;
 	box-shadow: 5px 5px 20px 0 rgba( 0, 0, 0, 0.1);
 }
 
@@ -310,27 +330,65 @@ h1{
 .galary{
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0;
+	justify-content: space-between;
+	margin: 0 auto 175px;
 	padding: 0;
-	background-color: #5363db;
-	background-size: cover;
-	margin-bottom: 175px;
+	max-width: 1400px;
 }
 
-.galary img{
+.icon_galary{
+	position: relative;
+	transition: opacity ease 0.5s;
 	max-width: 25%;
-	transition: opacity ease 1s;
+	background-size: cover;
+	overflow: hidden;
 }
 
-.galary img::after{
-	content: "\f002";
+.icon_galary img{
+    max-width: 100%;
+	vertical-align: middle;
+}
+
+.hover{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(91, 108, 235, .8);
+	opacity: 0;
+	transition: opacity .6s;
+}
+
+.hover:hover {
+	opacity: 1;
+	transition: opacity .6s;
+}
+
+.search_bg {
+	display: flex;
+	position: relative;
+	padding: 25px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.search_bg a{
+	text-decoration: none;
+}
+
+.icon-search {
+	position: absolute;
+	top: 48%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 22px;
+	color: #5b6ceb;
+	cursor: pointer;
 	
 }
 
-.galary img:hover{
-	opacity: 0.2;
-	transition: ease 1s;
-}
 
 /*--------------- SLIDER ---------------*/
 
@@ -338,10 +396,94 @@ h1{
 
 /*--------------- BLOCK ICONS ---------------*/
 
+.block_icons{
+	margin:  auto;
+}
 
+.icons{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background: rgba(83, 99, 219, 0.8);
+	max-width: 100%;
+	padding: 125px 97px 80px 96px;
+	margin: 0;
+}
+
+.card_icon{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-between;
+	flex-basis: calc(25% - 30px);
+	max-width: 100%;
+	margin: 0 30px 60px 0;
+	padding: 0;
+	
+}
+
+.border_icon{
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	margin-bottom: 35px;
+}
+
+.img_icon{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+  	height: 60px;	
+}
+
+.img_icon img{
+	margin: 0 auto;
+	display: inline-block;
+	padding: 10px;
+}
+
+.content_icon{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-between;
+	color: #ffffff;
+	max-width: 270px;
+}
+
+.card_icon h4{
+	font-size: 18px;
+	margin: 0 auto 30px auto;
+	color: #ffffff;
+	display: block;
+	vertical-align: top;
+}
+
+.content_icon p{
+	margin: 0	;
+	font-size: 16px;
+	line-height: 1.6;
+}
 
 /*--------------- PAY ---------------*/
 
+.pay{
+	margin: 0 auto;
+}
+
+.cards{
+	display: flex;
+	justify-content: center;
+	padding: 100px 115px 110px;
+}
+
+.pay_card{
+	display: flex;
+	flex-direction: column;
+	
+}
 
 
 
@@ -363,11 +505,11 @@ h1{
 
 @font-face {
 	font-family: 'icomoon';
-	src:  url('../assets/fonts/icomoon.eot?gbdhgo');
-	src:  url('../assets/fonts/icomoon.eot?gbdhgo#iefix') format('embedded-opentype'),
-	  url('../assets/fonts/icomoon.ttf?gbdhgo') format('truetype'),
-	  url('../assets/fonts/icomoon.woff?gbdhgo') format('woff'),
-	  url('../assets/fonts/icomoon.svg?gbdhgo#icomoon') format('svg');
+	src:  url('../fonts/icomoon/fonts/icomoon.eot');
+	src:  url('../fonts/icomoon/fonts/icomoon.eot') format('embedded-opentype'),
+	  url('../fonts/icomoon/fonts/icomoon.ttf') format('truetype'),
+	  url('../fonts/icomoon/fonts/icomoon.woff') format('woff'),
+	  url('../fonts/icomoon/fonts/icomoon.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
