@@ -372,6 +372,14 @@ h1{
 	padding: 25px;
 	background-color: #fff;
 	border-radius: 50%;
+	transition: box-shadow ease 0.3s, transform ease 0.5s;
+}
+
+.search_bg:hover{
+	cursor: pointer;
+	box-shadow: 0 0 40px rgb(238, 9, 219);
+	transform: scale(1.1);
+	transition: box-shadow ease 0.3s, transform ease 0.5s;
 }
 
 .search_bg a{
@@ -388,7 +396,6 @@ h1{
 	cursor: pointer;
 	
 }
-
 
 /*--------------- SLIDER ---------------*/
 
@@ -469,7 +476,7 @@ h1{
 /*--------------- PAY ---------------*/
 
 .wrapper_pay{
-	margin: 0 auto 100px;
+	margin: 0 auto;
 	background-position: right -80% bottom 0;
 	position: relative;
 	background-repeat: no-repeat;
@@ -559,6 +566,14 @@ h1{
 	text-align: center;
 	margin: 0 auto 52px;
 	padding: 0;
+	transition: box-shadow ease 0.3s, transform ease 0.5s;
+}
+
+.buy_now:hover{
+	cursor: pointer;
+	box-shadow: 0 0 40px rgba(83, 99, 219);
+	transform: scale(1.02);
+	transition: box-shadow ease 0.3s, transform ease 0.5s;
 }
 
 .button{
@@ -568,7 +583,145 @@ h1{
 }
 
 /*--------------- FOOTER ---------------*/
+footer{
+	margin: 0 auto;
+	color: #ffffff;
+}
 
+footer h4{
+	margin: 0 auto 64px;
+	font-size: 18px;
+}
+
+footer p{
+	margin: 0;
+	padding: 0;
+}
+
+footer .wrapper{
+	background-color: #5b6ceb;
+	padding: 100px 208px 104px 115px;
+}
+
+.block_footer{
+	display: flex;
+	justify-content: space-between;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.about{
+	flex-grow: 2;
+	margin-right: 140px;
+	max-width: 463px;
+}
+
+.about p{
+	margin-bottom: 74px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.icon_social{
+	position: relative;
+}
+
+.icon_social a{
+	color: #ffffff;
+	text-decoration: none;
+	margin-right: 17px;
+	font-size: 19px;
+	transition: ease 0.5s;
+}
+
+.icon_social a:hover{
+	color: rgb(238, 9, 219);
+	transition: ease 0.5s;
+}
+
+.contact{
+	position: relative;
+}
+
+.contact h4{
+	position: relative;
+	left: -30px;
+}
+
+.contact p{
+	line-height: 25px;
+}
+
+.plaise_email{
+	display: flex;
+	justify-content: space-between;
+}
+
+.plaise{
+	margin-right: 113px;
+}
+
+.adres,
+.phone,
+.email,
+.url{
+	position: relative;
+	font-size: 14px;
+}
+
+.adres{
+	margin-bottom: 35px;
+}
+
+.adres::before{
+	content: '\e905';
+	position: absolute;
+	left: -30px;
+	top: 5px;
+	font-family: 'icomoon';
+	font-size: 20px;
+}
+
+.psevdo::before{
+	content: '\e900';
+	position: absolute;
+	left: -30px;
+	top: 7px;
+	font-family: 'icomoon';
+	font-size: 20px;
+}
+
+.email{
+	margin-bottom: 60px;
+}
+
+.email::before{
+	content: '\e901';
+	position: absolute;
+	left: -30px;
+	font-family: 'icomoon';
+	font-size: 20px;
+}
+
+.url::before{
+	content: '\e907';
+	position: absolute;
+	left: -30px;
+	top: 3px;
+	font-family: 'icomoon';
+	font-size: 20px;
+}
+
+.copyright{
+	background-color: #5363d8;
+	margin: 0 auto;
+	text-align: center;
+	padding: 45px 0;
+}
+
+.copyright p{
+	margin: 0 auto;
+}
 
 
 /*--------------- MEDIA ---------------*/
