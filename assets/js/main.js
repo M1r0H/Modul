@@ -1,4 +1,4 @@
-$('slider').slick({
+$('.slider').slick({
     infinite: true,
     arrows: true,
     dots: false,
