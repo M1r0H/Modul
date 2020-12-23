@@ -630,7 +630,6 @@ footer .wrapper{
 	text-decoration: none;
 	margin-right: 17px;
 	font-size: 19px;
-	transition: ease 0.5s;
 }
 
 .icon_social a:hover{
@@ -660,25 +659,29 @@ footer .wrapper{
 	margin-right: 113px;
 }
 
-.adres,
+.address,
 .phone,
 .email,
 .url{
 	position: relative;
 	font-size: 14px;
+	font-style: normal;
 }
 
-.adres{
-	margin-bottom: 35px;
+.address a,
+.phone a,
+.email a,
+.url a {
+	color: #ffffff;
+	text-decoration: none;
 }
 
-.adres::before{
-	content: '\e905';
-	position: absolute;
-	left: -30px;
-	top: 5px;
-	font-family: 'icomoon';
-	font-size: 20px;
+.address a:hover,
+.phone a:hover,
+.email a:hover,
+.url a:hover {
+	color: rgb(238, 9, 219);
+	transition: color ease 0.5s;
 }
 
 .psevdo::before{
@@ -686,6 +689,19 @@ footer .wrapper{
 	position: absolute;
 	left: -30px;
 	top: 7px;
+	font-family: 'icomoon';
+	font-size: 20px;
+}
+
+.address{
+	margin-bottom: 35px;
+}
+
+.address::before{
+	content: '\e905';
+	position: absolute;
+	left: -30px;
+	top: 5px;
 	font-family: 'icomoon';
 	font-size: 20px;
 }
