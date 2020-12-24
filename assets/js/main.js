@@ -1,4 +1,4 @@
-$('.slider').slick({
+$('.rv-slider').slick({
     infinite: true,
     arrows: true,
     dots: false,

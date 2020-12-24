@@ -435,8 +435,99 @@ h1{
 }
 
 /*--------------- SLIDER ---------------*/
+.wrapper_slider{
+	display: flex;
+	justify-content: space-between;
+	margin: 0px 57px 175px 80px;
+}
 
+.about_us{
+	max-width: 50%;
+	margin-right: 145px;
+} 
 
+.about_us h3{
+	margin: 13px 0px 0 1px;
+	font-size: 30px;
+	color: #5b6ceb;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.5;
+	text-align: left;	  
+}
+
+.about_content{
+	font-size: 14px;
+	color: #555555;
+	line-height: 1.6;
+	text-align: left;
+}
+
+.slider_container{
+	margin: 0;
+}
+  
+.rv-slider {
+	max-width: 570px;
+	margin-right: 40px;
+  }
+  
+  .slider-block {
+	position: relative;
+	z-index: -1;
+  }
+  
+  .slider-block img {
+	max-width: 100%;
+  }
+  
+  .about-holder .rv-slider .slick-arrow {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color:#fff;
+	box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rv-slider .slick-prev::before {
+	content: "\f104";
+	font-family: 'Icomoon', sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	color: #5b6ceb;
+  }
+  
+  .rv-slider .slick-next::before {
+	content: "\f105";
+	font-family: 'Icomoon', sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	color: #5b6ceb;
+  }
+  
+  .rv-slider .slick-next {
+	right: -4.5%;
+    opacity: 1;
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.6);
+  }
+  
+  .rv-slider .slick-prev {
+	left: -4.5%;
+	opacity: 1;
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.6);
+  }
+  
 
 /*--------------- BLOCK ICONS ---------------*/
 
@@ -450,8 +541,8 @@ h1{
 	flex-wrap: wrap;
 	background: rgba(83, 99, 219, 0.8);
 	max-width: 100%;
-	padding: 125px 97px 80px 96px;
-	margin: 0;
+	padding: 125px 102px 77px 59px;
+    margin: 0;
 }
 
 .card_icon{
@@ -462,15 +553,15 @@ h1{
 	justify-content: space-between;
 	flex-basis: calc(25% - 30px);
 	max-width: 100%;
-	margin: 0 30px 60px 0;
-	padding: 0;
+	margin: 3px -3px 57px 23px;
+    padding: 0;
 	
 }
 
 .border_icon{
 	border: 2px solid #ffffff;
 	border-radius: 50%;
-	margin-bottom: 35px;
+	margin: 0;
 }
 
 .img_icon{
@@ -499,53 +590,59 @@ h1{
 
 .card_icon h4{
 	font-size: 18px;
-	margin: 0 auto 30px auto;
-	color: #ffffff;
-	vertical-align: top;
+    margin: 32px 2px 12px 0;
+    color: #ffffff;
+    line-height: 1.4;
+    vertical-align: top;
 }
 
 .content_icon p{
-	margin: 0	;
-	font-size: 16px;
-	line-height: 1.6;
+	margin: 0px;
+    font-size: 16px;
+    line-height: 1.7;
 }
 
 /*--------------- PAY ---------------*/
 
 .wrapper_pay{
-	margin: 0 auto;
-	background-position: right -80% bottom 0;
-	position: relative;
-	background-repeat: no-repeat;
-	max-width: 1400px;
+	margin: 0 0px -25px 0;
+    background-position: right -103% bottom 26px;
+    position: relative;
+    background-repeat: no-repeat;
+    max-width: 1400px;
+    padding: 100px 0 131px 82px;
 }
 
-.cards{
-	display: flex;
-	justify-content: space-between;
-	padding: 100px 0 110px;
-	margin: 0 auto;
-	max-width: 1200px;
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 97px 0 0px;
+    padding: 0;
+    max-width: 1200px;
 }
 
-.pay_card{
-	display: flex;
-	flex-direction: column;
-	flex-basis: 370px;
-	border-radius: 20px;
-	background-color: #fff;
+.pay_card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 370px;
+    border-radius: 10px;
+    background-color: #fff;
 }
 
 .pay_card_title{
-	border-radius: 20px 20px 0 0;
-	background-color: #5363db;
-	padding: 50px 70px 50px 104px;
+    border-radius: 10px 10px 0 0;
+    background-color: #5363db;
+	padding: 34px 70px 35px 107px;
 }
 
 .pay_card_content{
 	text-align: justify;
-	margin: 50px auto 50px;
+	margin: 30px 70px 41px;
 	font-size: 18px;
+}
+
+.pay_card_content p {
+	margin: 16px 0px 29px 0;
 }
 
 .cost{
@@ -560,7 +657,8 @@ h1{
 
 .cost::after{
 	content: '\002Fmonth';
-	font-size: 18px;
+	font-size: 16px;
+	text-transform: uppercase;
 }
 
 .pay_card_content{
@@ -589,15 +687,15 @@ h1{
 	border-bottom: none;
 }
 
-.buy_now{
-	background-color: #5b6ceb;
-	border: none;
-	border-radius: 20px;
-	max-width: 170px;
-	text-align: center;
-	margin: 0 auto 52px;
-	padding: 0;
-	transition: box-shadow ease 0.3s, transform ease 0.5s;
+.buy_now {
+		background-color: #5b6ceb;
+		border: none;
+		border-radius: 18px;
+		max-width: 170px;
+		text-align: center;
+		margin: -27px auto 52px;
+		padding: 0px 0 0px 0;
+		transition: box-shadow ease 0.3s, transform ease 0.5s;
 }
 
 .buy_now:hover{
@@ -610,7 +708,7 @@ h1{
 .button{
 	color: #ffffff;
 	font-size: 18px;
-	margin: 17px 48px;
+	margin: 12px 48px 18px;
 }
 
 /*--------------- FOOTER ---------------*/
@@ -620,7 +718,7 @@ footer{
 }
 
 footer h4{
-	margin: 0 auto 64px;
+	margin: 0 auto 52px;
 	font-size: 18px;
 }
 
@@ -631,26 +729,25 @@ footer p{
 
 footer .wrapper{
 	background-color: #5b6ceb;
-	padding: 100px 208px 104px 115px;
+	padding: 96px 105px 92px 0px;
 }
 
 .block_footer{
 	display: flex;
 	justify-content: space-between;
 	max-width: 1080px;
-	margin: 0 auto;
+	margin: 0px 0 10px 82px;
 }
 
 .about{
 	flex-grow: 2;
-	margin-right: 140px;
 	max-width: 463px;
 }
 
 .about p{
-	margin-bottom: 74px;
-	font-size: 14px;
-	line-height: 20px;
+	margin-bottom: 68px;
+    font-size: 14px;
+    line-height: 22px;
 }
 
 .icon_social{
@@ -659,9 +756,9 @@ footer .wrapper{
 
 .icon_social a{
 	color: #ffffff;
-	text-decoration: none;
-	margin-right: 17px;
-	font-size: 19px;
+    text-decoration: none;
+    margin-right: 13px;
+    font-size: 21px;
 }
 
 .icon_social a:hover{
@@ -671,6 +768,7 @@ footer .wrapper{
 
 .contact{
 	position: relative;
+	margin-right: 26px;
 }
 
 .contact h4{
@@ -685,10 +783,11 @@ footer .wrapper{
 .plaise_email{
 	display: flex;
 	justify-content: space-between;
+	margin: 0px -38px 0 38px;
 }
 
 .plaise{
-	margin-right: 113px;
+	margin: 4px 146px 0px -33px;
 }
 
 .address,
@@ -706,6 +805,7 @@ footer .wrapper{
 .url a {
 	color: #ffffff;
 	text-decoration: none;
+	line-height: 1.3;
 }
 
 .address a:hover,
@@ -719,27 +819,27 @@ footer .wrapper{
 .psevdo::before{
 	content: '\e900';
 	position: absolute;
-	left: -30px;
-	top: 7px;
+	left: -37px;
+    top: 0px;
 	font-family: 'icomoon';
 	font-size: 20px;
 }
 
 .address{
-	margin-bottom: 35px;
+	margin-bottom: 23px;
 }
 
 .address::before{
 	content: '\e905';
 	position: absolute;
-	left: -30px;
+	left: -34px;
 	top: 5px;
 	font-family: 'icomoon';
 	font-size: 20px;
 }
 
 .email{
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 
 .email::before{
@@ -763,11 +863,12 @@ footer .wrapper{
 	background-color: #5363d8;
 	margin: 0 auto;
 	text-align: center;
-	padding: 45px 0;
+	padding: 40px 69px 40px 60px;
 }
 
 .copyright p{
-	margin: 0 auto;
+	font-size: 17px;
+    margin: 0 auto;
 }
 
 
@@ -805,11 +906,13 @@ footer .wrapper{
 		margin: 50px;
 	}
 
-	footer .wrapper{
-		padding: 100px 20px 104px 25px;
-	}
+	
 	.galary{
 		margin: 0 0px 175px 0px;
+	}
+
+	footer .wrapper{
+		padding: 100px 20px 104px 25px;
 	}
 
 	.about{
@@ -827,9 +930,34 @@ footer .wrapper{
 		margin: 50px;
 	}
 
-	footer .wrapper{
-		padding: 100px 20px 104px 25px;
+	.wrapper_slider{
+		display: block;
+		margin: 0 auto;
 	}
+
+	.about_us{
+		max-width: 100%;
+    	margin: 0 auto 75px;
+    	text-align: center;
+	}
+
+	.about_us h3 {
+		text-align: center;
+	}
+
+	.about_content {
+		text-align: justify;
+	}
+
+
+	.slider_container {
+		margin-bottom: 175px;
+	}
+
+	.rv-slider {
+		margin: 0 auto;
+	}
+
 	.galary{
 		margin: 0 0px 175px 0px;
 	}
@@ -854,17 +982,13 @@ footer .wrapper{
 		background-size: cover;
 	}
 
-	.cards{
-		padding: 100px 50px;
-	}
-
 	.pay_card {
 		flex-basis: 100%;
 		margin: 0px 20px;
 	}
 
 	.pay_card_title{
-		padding: 50px
+		padding: 36px;
 	}
 	
 	.cost {
@@ -880,9 +1004,22 @@ footer .wrapper{
 		margin: 0 auto 25px;
 	}
 
+	footer .wrapper{
+		padding: 100px 20px 104px 25px;
+	}
+
 	.about{
 		margin-right: 100px;
     	max-width: 456px;
+	}
+
+	.contact h4 {
+		position: relative;
+		left: -65px;
+	}
+
+	.plaise {
+		margin: 4px 70px 0px -72px;
 	}
 }
 
@@ -1038,6 +1175,15 @@ footer .wrapper{
 	.content_icon p{
 		font-size: 11px;
 	}
+
+	.wrapper_pay {
+		margin: 0;
+		padding: 0;
+	}
+
+	.cards {
+		margin: 0;
+	}
 	
 	.cards {
 		padding: 50px 25px;
@@ -1054,6 +1200,7 @@ footer .wrapper{
 
 	.block_footer {
 		max-width: 100%;
+		margin: 0px 0 0 0;
 	}
 
 	footer .wrapper {
@@ -1161,6 +1308,18 @@ footer .wrapper{
 
 	.content_card p:last-child {
 		margin-bottom: 50px;
+	}
+
+	.about_content {
+		padding: 0 20px;
+	}
+
+	.rv-slider .slick-next {
+		right: 0;
+	}
+
+	.rv-slider .slick-prev {
+		left: 0;
 	}
 
 	.icons {
@@ -1287,6 +1446,16 @@ footer .wrapper{
 	.content_card p:last-child {
 		padding-top: 23px;
 		margin-bottom: 36px;
+	}
+
+	.rv-slider .slick-next {
+		height: 30px;
+		width: 30px;
+	}
+
+	.rv-slider .slick-prev {
+		height: 30px;
+		width: 30px;
 	}
 
 	.icons {
